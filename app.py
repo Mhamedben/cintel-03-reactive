@@ -9,6 +9,7 @@ import seaborn as sns
 # Use the built-in function to load the Palmer Penguins dataset
 # Provides the Palmer Penguins dataset
 import palmerpenguins
+from shiny import reactive
 
 # Load the Palmer Penguins dataset
 penguins_df = palmerpenguins.load_penguins()
