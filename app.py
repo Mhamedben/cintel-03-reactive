@@ -117,3 +117,6 @@ with ui.layout_columns():
                 color="species",
                 symbol="species",
             )
+            @reactive.calc
+def filtered_data():
+    return penguins_df[penguins_df["species"].isin(input.selected_species_list())]
